@@ -6,10 +6,10 @@
     <title>Forge and Flow</title>
 
     <!-- Bootstrap CDN CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Font Awesome CDN CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
     <!--CSS Animate CDN CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -21,8 +21,13 @@
       h1 {
         display: block;
       }
+
+      .event-title {
+        color: rgb(250, 248, 250);
+      }
     </style>
   </head>
+
   <body>
     <!-- begin header -->
     <header-component></header-component>
@@ -33,12 +38,6 @@
 
       <!-- begin carousel -->
       <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/carousel/carousel-1.jpg" class="d-block w-100" alt="Weight room" />
@@ -48,10 +47,9 @@
             </div>
           </div>
 
-          <!-- video goes here -->
           <div class="carousel-item">
             <div class="ratio ratio-16x9">
-              <video autoplay loop muted id="my-vid">
+              <video autoplay loop muted>
                 <source src="https://videos.pexels.com/video-files/6390166/6390166-hd_1920_1080_25fps.mp4" type="video/mp4" />
               </video>
             </div>
@@ -65,109 +63,65 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- end carouosel -->
-
-      <!-- Begin Font Awesome Row -->
-      <div class="container-fluid text-center blinn-fa-container">
-        <div class="row">
-          <div class="col col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><i class="fa-solid fa-dumbbell blinn-fa-icon"></i><br /><a href="#">Hours</a></div>
-          <div class="col col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><i class="fa-solid fa-weight-hanging blinn-fa-icon"></i><br /><a href="#">Tickets</a></div>
-          <div class="col col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><i class="fa-solid fa-person-running blinn-fa-icon"></i><br /><a href="#">Clothing</a></div>
-          <div class="col col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><i class="fa-solid fa-face-grin-beam-sweat blinn-fa-icon"></i><br /><a href="#">Photos</a></div>
-          <div class="col col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><i class="fa-solid fa-bolt blinn-fa-icon"></i><br /><a href="#">Volunteers</a></div>
-          <div class="col col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><i class="fa-solid fa-dragon blinn-fa-icon"></i><br /><a href="#">Pricing</a></div>
-        </div>
-      </div>
-      <!-- End Font Awesome Row -->
-
-      <!-- Begin Clip Path -->
-      <div id="custom-clip-path"></div>
-      <!-- End Clip Path -->
+      <!-- end carousel -->
 
       <!-- Begin First Paragraph -->
       <div class="container paragraph-one headline">
         <div class="row">
           <div class="col-12">
             <p>
-              <img src="images/square/paragraph-one.jpg" class="paragraph-one-img" alt="Member of the modeling agancy" />
-
-              Welcome to Forge and Flow Fitness, where strength, wellness, and community come together to create an environment built for lasting success. As a membership-based gym, we provide access to high-quality weightlifting equipment, a dedicated yoga space, a relaxing sauna, clean and comfortable locker rooms, and energizing mat Pilates classes designed to support every stage of your fitness journey. Whether you are just starting out or looking to take your training to the next level, Forge and Flow Fitness offers the space and resources you need to grow. Our mission is to empower individuals to achieve their fitness and wellness goals by providing a supportive and motivating atmosphere, along with diverse training options that promote strength, flexibility, balance, and long-term health. We believe fitness is not just about physical results, but about building confidence, improving overall well-being, and creating sustainable habits that last a lifetime. At Forge and Flow
-              Fitness, our vision is to create a lasting fitness community that brings people of all generations together. We are committed to fostering a welcoming and inclusive environment where everyone feels encouraged, supported, and inspired to become their best self. No matter your experience level, you will find a community that values progress, celebrates achievements, and helps you stay motivated every step of the way.
+              <img src="images/square/paragraph-one.jpg" class="paragraph-one-img" />
+              Welcome to Forge and Flow Fitness, where strength, wellness, and community come together.
             </p>
           </div>
         </div>
       </div>
       <!-- End First Paragraph -->
 
-      <!doctype html>
-      <html>
-        <head>
-          <style>
-            .event-title {
-              color: rgb(250, 248, 250);
-            }
-          </style>
-        </head>
+      <!-- Begin LottieFile -->
+      <div class="container-fluid lottiefiles">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="event-title">Register For Our Free Event</h2>
+            </div>
 
-        <body>
-          <!-- Begin LottieFile -->
-          <div class="container-fluid lottiefiles">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2 class="event-title">Register For Our Free Event</h2>
-                </div>
+            <div class="col-6">
+              <dotlottie-wc src="https://lottie.host/ea9e5aad-2243-4db5-9bda-03051c2eddaf/kK6EwcBuxL.lottie" style="width: 300px; height: 300px" autoplay loop> </dotlottie-wc>
+            </div>
 
-                <div class="col-6">
-                  <dotlottie-wc src="https://lottie.host/ea9e5aad-2243-4db5-9bda-03051c2eddaf/kK6EwcBuxL.lottie" style="width: 300px; height: 300px" autoplay loop></dotlottie-wc>
-                </div>
-
-                <div class="col-6">
-                  <p>
-                    Register now for our upcoming Forge and Flow Fitness event and secure your spot in an experience designed to move, challenge, and inspire you. This event brings together strength training, flexibility work, and overall wellness activities in a supportive and energetic environment where every participant can grow, improve, and feel empowered at their own pace. Whether your focus is building strength, increasing flexibility, improving endurance, or simply creating healthier habits, this event is designed to meet you where you are and help you move forward in your fitness journey. You’ll take part in guided sessions led by experienced instructors, connect with a motivating community of individuals who share similar goals, and experience the positive, high-energy atmosphere that defines Forge and Flow Fitness. Every activity is designed to help you push yourself safely while still feeling supported and encouraged throughout the process. Spaces are limited, so early
-                    registration is strongly encouraged to ensure you can participate in your preferred classes and time slots. Don’t miss this opportunity to challenge yourself, grow stronger, and become part of a community focused on long-term wellness.
-                  </p>
-                </div>
-              </div>
+            <div class="col-6">
+              <p>Register now for our upcoming Forge and Flow Fitness event and secure your spot in an experience designed to move, challenge, and inspire you.</p>
             </div>
           </div>
-          <!-- End LottieFile -->
-        </body>
-      </html>
+        </div>
+      </div>
+      <!-- End LottieFile -->
 
       <!-- Begin Headshot -->
       <div class="container text-center headshots">
         <div class="row">
-          <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="images/square/person-1.jpg" class="cropped" alt="Person 1" />
-            <br />
+          <div class="col-md-4">
+            <img src="images/square/person-1.jpg" class="cropped" />
             <blockquote>
-              This gym has great energy and killer workouts! If you want to get into the best shape of your life, I recommend the hot Pilates classes!
+              This gym has great energy and killer workouts!
               <cite>Sarah P. Alexander</cite>
             </blockquote>
           </div>
-          <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="images/square/person-2.jpg" class="cropped" alt="Person 1" />
-            <br />
+
+          <div class="col-md-4">
+            <img src="images/square/person-2.jpg" class="cropped" />
             <blockquote>
-              I use the weightlifting area regularly and it has everything I need for solid workouts. The equipment is great, the space is open, and the atmosphere is motivating. It’s a great gym for serious lifting and consistent training.
+              Great gym for serious lifting.
               <cite>John D. Lee</cite>
             </blockquote>
           </div>
-          <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="images/square/person-3.jpg" class="cropped" alt="Person 1" />
-            <br />
+
+          <div class="col-md-4">
+            <img src="images/square/person-3.jpg" class="cropped" />
             <blockquote>
-              My goal this year was to get more flexible and in tune with my body, and the yoga classes here have been amazing. Each session leaves me feeling stronger, calmer, and more connected. The instructors are supportive and make every class both challenging and rewarding.
+              Yoga classes have been amazing.
               <cite>Samantha T. Davis</cite>
             </blockquote>
           </div>
@@ -176,30 +130,7 @@
       <!-- End Headshot -->
     </main>
 
-    <!-- begin footer -->
+    <!-- footer -->
     <footer-component></footer-component>
-    <!-- end footer -->
-    <section>
-      <!-- jQuery CDN JS -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-      <!-- Bootstrap CDN JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-      <!-- LottieFile CDN JS-->
-      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
-
-      <!--ScrollReveal CDN JS-->
-      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
-      <!-- Local JS File with Header -->
-      <script src="components/js/header.js"></script>
-
-      <!-- Local JS File with Footer -->
-      <script src="components/js/footer.js"></script>
-
-      <!-- Locsl JS File -->
-      <script src="js/scripts.js"></script>
-    </section>
   </body>
 </html>
