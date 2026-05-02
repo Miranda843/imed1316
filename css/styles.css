@@ -80,7 +80,13 @@ p {
 .lottiefiles {
 background-color: var(--accentColor) !important;
 padding: 25px;
-color: lab(98.69% 0.34 0.11) !important;
+color: #ffffff !important;
 margin-top: 20px;
 margin-bottom: 40px;
+}
+
+
+.lottiefiles h2 {
+
+    color: #ffffff !important;
 }
