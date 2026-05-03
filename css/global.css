@@ -14,13 +14,13 @@
 :root {
 
 /* var(--primaryColor) !important; */
---primaryColor: #714BB4;
+--primaryColor: #422b69;
 
 /* var(--secondaryColor) !important; */
---secondaryColor: #A54BB4;
+--secondaryColor: #805a87;
 
 /* var(--accentColor) !important; */
---accentColor: #4B5AB4;
+--accentColor: #4b5bb483;
 
 /* var(--fontFamily) !important; */
 --fontFamily: "Playfair Display", serif;
